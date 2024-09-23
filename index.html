@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Measurement Units Converter</title>
+    <link rel="icon" href="/imgs/favicon.ico">
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+
+  <body>
+    <h1>Measurement Units Converter</h1>
+    <form>
+      <div class="dropdown" id="to-dropdown">
+        <button class="dropdown-button" id="to-button">To</button>
+        <div class="dropdown-content" id="to-options"></div>
+      </div>
+
+      <div class="output-container">
+        <input type="number" readonly id="output" />
+        <button class="copy-button" id="copy">
+          <img src="/imgs/copy-icon.svg" width="20px" />
+        </button>
+      </div>
+
+      <div class="dropdown" id="from-dropdown">
+        <button class="dropdown-button" id="from-button">From</button>
+        <div class="dropdown-content" id="from-options"></div>
+      </div>
+
+      <input type="number" placeholder="Enter value" id="input" />
+    </form>
+    <script src="/main.js"></script>
+  </body>
+</html>
